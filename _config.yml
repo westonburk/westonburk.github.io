@@ -7,14 +7,13 @@ version: 2
 
 # Personal info
 name: Weston Burkholder
-age: 26
 title: Full Stack .Net Developer
 email: wesburk005@gmail.com
 # email_title: Email (Email title override)
 phone: 717-283-7901
 # phone_title: Phone (Phone title override)
 # website: Your website (eg. https://google.com)(optional)
-# website_title: Web (Website title override)
+website_title: Age: 26
 
 # Dark Mode (true/false/never)
 darkmode: true
@@ -89,7 +88,7 @@ content:
         title: Tech Support One
         sub_title: .Net Developer
         caption: August 2021 - September 2024
-        link: https://techsupportonellc.com/
+        link: techsupportonellc.com
         quote: >
           Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
