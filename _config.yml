@@ -7,6 +7,7 @@ version: 2
 
 # Personal info
 name: Weston Burkholder
+age: 26
 title: Full Stack .Net Developer
 email: wesburk005@gmail.com
 # email_title: Email (Email title override)
@@ -50,7 +51,7 @@ github_username:  westonburk
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
+about_profile_image: images/favicon.png
 about_content: | # this will include new lines to allow paragraphs
   Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
 
@@ -85,10 +86,10 @@ content:
     layout: list
     content:
       - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
+        title: Tech Support One
+        sub_title: .Net Developer
+        caption: August 2021 - September 2024
+        link: https://techsupportonellc.com/
         quote: >
           Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
