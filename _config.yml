@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Weston Burkholder
-title: Full Stack .Net Developer
+title: Full Stack Software Developer
 email: wesburk005@gmail.com
 # email_title: Email (Email title override)
 phone: 717-283-7901
@@ -51,36 +51,44 @@ github_username:  westonburk
 # About Section
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/favicon.png
+# Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+
+# You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
+#   - Lists
+#   - Tables
+#   - <a href="google.com">Links</a>
+#   - Images ![alt text](/images/landscape-trees.jpg "Trees")
 about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
-
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
-
+  I am 26 year old living in South Florida. I am most familiar with C# and .Net.
+  I do not have a computer science degree, I use online courses and self teaching to learn new skills. I have completed Tim Corey's [C# Master Course](https://www.iamtimcorey.com/courses/csharp-mastercourse/).
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        border:   # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: BarberCo
+        link: https://github.com/westonburk/BarberCo
+        link_text: https://github.com/westonburk/BarberCo
+        quote: >
+          This a two part portfolio project, there is a barber shop website and a web portal for barbers.
+        # description: | # this will include new lines to allow paragraphs
+        #   Description about the work on/with the project
+      - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
+        title: BarberCo.Web
+        link: https://barberco-web.salmonsmoke-ad46fcca.eastus.azurecontainerapps.io/
+        link_text: Azure Deployment
         additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          - title:  GitHub
             icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+            url: https://github.com/westonburk/BarberCo
         quote: >
-          Short overview of the project (optional)
+          Customer facing website
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+          Description about the work on/with the project          
   - title: Experience
     layout: list
     content:
@@ -92,7 +100,19 @@ content:
         quote: >
           Tech Support One is a small company that provides technology support and custom software.
         description: | # this will include new lines to allow paragraphs
-          At Tech Support One, I built mostly desktop applications using winforms.
+          At Tech Support One, I built mostly windows desktop applications using winforms and mssql server for a database.
+          I also worked on some web projects as well for tech support one. At tech support one I was one of a small team of developers.
+          Each developer was often given his own project and would work directly with the customer to build the software according to their needs.
+          I left this job voluntarily when I moved from Pennsylvania to Florida.
+      - layout: right
+        title: Publix
+        sub_title: Forklift Operator
+        caption: Dec 2024 - Present
+        #link: techsupportonellc.com
+        quote: >
+          Publix is a grocery store chain in the Southern United States.
+        description: | # this will include new lines to allow paragraphs
+         I am working temporarily as a forklift operator at a Publix Distribution Center. Until I can find another job in Software Development.
   # - title: Education
   #   layout: list
   #   content:
@@ -117,7 +137,7 @@ footer_show_references: true
 
 # Build settings
 # theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+# remote_theme: sproogen/modern-resume-theme # (Use this if you are hosting your resume on GitHub)
 
 sass:
   sass_dir: _sass
