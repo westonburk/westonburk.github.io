@@ -59,8 +59,9 @@ about_profile_image: images/favicon.png
 #   - <a href="google.com">Links</a>
 #   - Images ![alt text](/images/landscape-trees.jpg "Trees")
 about_content: | # this will include new lines to allow paragraphs
-  I am 26 year old living in South Florida. I am most familiar with C# and .Net.
+  Hello I am 26 years old and I live in Florida, USA. I am most familiar with C# and .Net.
   I do not have a computer science degree, I use online courses and self teaching to learn new skills. I have completed Tim Corey's [C# Master Course](https://www.iamtimcorey.com/courses/csharp-mastercourse/).
+  Checkout my [GitHub](https://github.com/westonburk/BarberCo).
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
@@ -72,23 +73,93 @@ content:
         link: https://github.com/westonburk/BarberCo
         link_text: https://github.com/westonburk/BarberCo
         quote: >
-          This a two part portfolio project, there is a barber shop website and a web portal for barbers.
-        # description: | # this will include new lines to allow paragraphs
-        #   Description about the work on/with the project
+        description: | # this will include new lines to allow paragraphs
+          BarberCo is a proof of concept project for my portfolio. BarberCo.Web is the website for fictious "Mike's Barber Shop",
+          where customers can book appointments, view hours, and contact info etc.
+          BarberCo.Management is a portal for barbers to login and  view upcoming appointments. And BarberCo.Api provides data for both frontend websites.
+
+
+
+
+
+
+
+          Logins for [BarberCo.Management](https://barberco-management.salmonsmoke-ad46fcca.eastus.azurecontainerapps.io/):
+          <table>
+            <tr>
+              <th>Username</th>
+              <th>Password</th>
+              <th>Role</th>
+            </tr>
+            <tr>
+              <td>JoeLouden</td>
+              <td>oak-water-cougarD4</td>
+              <td>barber</td>
+            </tr>
+            <tr>
+              <td>MikeBrenman</td>
+              <td>slowly-wood-chocolateW9</td>
+              <td>admin</td>
+            </tr>
+          </table>
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
         title: BarberCo.Web
         link: https://barberco-web.salmonsmoke-ad46fcca.eastus.azurecontainerapps.io/
-        link_text: Azure Deployment
+        link_text: Azure Url
         additional_links:
           - title:  GitHub
             icon: fab fa-github
             url: https://github.com/westonburk/BarberCo
         quote: >
-          Customer facing website
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project          
+          ![alt text](/images/barberco-web.png "Web")
+
+          - Blazor Server 
+          - ApiKey Authentication with BarberCo.Api
+          - Hosted in Azure Container App
+          - Pure html and css for UI
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: BarberCo.Management
+        link: https://barberco-management.salmonsmoke-ad46fcca.eastus.azurecontainerapps.io/
+        link_text: Azure Url
+        additional_links:
+          - title:  GitHub
+            icon: fab fa-github
+            url: https://github.com/westonburk/BarberCo
+        quote: >
+        description: | # this will include new lines to allow paragraphs
+          ![alt text](/images/barberco-management.png "Management")
+
+          - Blazor Web Assembly (wasm)
+          - Jwt Authentication with BarberCo.Api
+          - Hosted in Azure Container App
+          - Uses open source ui library [MudBlazor](https://mudblazor.com/)
+          - Offline access to dashboard to view Appointments
+          - 2 access levels admin and barber
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: BarberCo.Api
+        # link: 
+        # link_text: 
+        additional_links:
+          - title:  GitHub
+            icon: fab fa-github
+            url: https://github.com/westonburk/BarberCo
+        quote: >
+        description: | # this will include new lines to allow paragraphs
+          ![alt text](/images/barberco-api.png "Api")
+
+          - .Net Core Web Api
+          - Entity Framework Core for ORM
+          - Entity Framework Core Identity for Authentication 
+          - Azure Sql for Data Storage
+          - Hosted in Azure Container App
+          - 2 Authentication Schemes Jwt and ApiKey
   - title: Experience
     layout: list
     content:
@@ -112,7 +183,7 @@ content:
         quote: >
           Publix is a grocery store chain in the Southern United States.
         description: | # this will include new lines to allow paragraphs
-         I am working temporarily as a forklift operator at a Publix Distribution Center. Until I can find another job in Software Development.
+         I am working as a forklift operator at a Publix Distribution Center.
   # - title: Education
   #   layout: list
   #   content:
@@ -127,10 +198,30 @@ content:
   - title: Skills
     layout: text
     content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
-
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
-
+         <div style="display:flex; gap:40px;">
+            <div style="flex:1;">
+              <ul>
+                <li>C#</li>
+                <li>Blazor</li>
+                <li>Azure</li>
+                <li>Entity Framework</li>
+                <li>SQL Server</li>
+                <li>WinForms</li>
+                <li>WPF</li>
+              </ul>
+            </div>
+            <div style="flex:1;">
+              <ul>
+                <li>Power Bi</li>
+                <li>Git</li>
+                <li>Docker</li>
+                <li>Python</li>
+                <li>Excel</li>
+                <li>DevExpress</li>
+                <li>Dapper</li>
+              </ul>
+            </div>
+          </div>
 # Footer
 footer_show_references: true
 # references_title: References on request (Override references text)
